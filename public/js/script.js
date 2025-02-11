@@ -32,7 +32,7 @@ no_button.addEventListener('click', () => {
     // Change banner source
     let banner = document.getElementById('banner');
     if (clicks === 0) {
-        banner.src = "public/images/no.mp4";
+        banner.src = "public/images/no.gif";
         refreshBanner();
     }
     clicks++;
@@ -59,9 +59,9 @@ no_button.addEventListener('click', () => {
 });
 
 yes_button.addEventListener('click', () => {
-    // change banner mp4 path
+    // change banner gif path
     let banner = document.getElementById('banner');
-    banner.src = "public/images/yes.mp4";
+    banner.src = "public/images/yes.gif";
     refreshBanner();
     // hide buttons div
     let buttons = document.getElementsByClassName('buttons')[0];
@@ -72,7 +72,7 @@ yes_button.addEventListener('click', () => {
 });
 
 function refreshBanner() {
-    // Reload banner mp4 to force load  
+    // Reload banner gif to force load  
     let banner = document.getElementById('banner');
     let src = banner.src;
     banner.src = '';
